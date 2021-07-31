@@ -146,9 +146,9 @@ const IndexPage = () => {
         </span>
       </p>
       <ul style={listStyles}>
-        <li style={docLinkStyle}>
+        <li style={docLinkStyle as any}>
           <a
-            style={linkStyle}
+            style={linkStyle as any}
             href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
           >
             {docLink.text}
@@ -158,13 +158,13 @@ const IndexPage = () => {
           <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
             <span>
               <a
-                style={linkStyle}
+                style={linkStyle as any}
                 href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
               >
                 {link.text}
               </a>
               {link.badge && (
-                <span style={badgeStyle} aria-label="New Badge">
+                <span style={badgeStyle as any} aria-label="New Badge">
                   NEW!
                 </span>
               )}
